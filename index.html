@@ -14,62 +14,153 @@
         body {
             background-color: #0d0d11;
             color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
+            line-height: 1.6;
+            padding: 20px 15px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        header {
             text-align: center;
+            padding: 40px 0 20px;
         }
         .avatar {
-            width: 130px;
-            height: 130px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
             border: 3px solid #f1c40f;
             box-shadow: 0 0 20px rgba(241, 196, 15, 0.4);
-            margin-bottom: 20px;
+            margin: 0 auto 15px;
             background: linear-gradient(135deg, #2c3e50, #0d0d11);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         .subtitle {
             color: #f1c40f;
             font-size: 0.85rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
         }
         h1 {
             font-size: 2.2rem;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
-        p {
+        .bio {
             color: #a0a0a0;
-            max-width: 350px;
-            line-height: 1.5;
-            font-size: 1rem;
+            font-size: 0.95rem;
             margin-bottom: 25px;
         }
+        section {
+            background: #16161e;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #22222e;
+        }
+        h2 {
+            font-size: 1.3rem;
+            color: #f1c40f;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #22222e;
+            padding-bottom: 8px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skill-tag {
+            background: #22222e;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid #333344;
+        }
+        .project-card {
+            background: #0d0d11;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .project-card h3 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+        .project-card p {
+            color: #888;
+            font-size: 0.85rem;
+        }
         .btn {
+            display: block;
+            text-align: center;
             background-color: #f1c40f;
             color: #0d0d11;
-            padding: 12px 28px;
+            padding: 12px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: bold;
-            display: inline-block;
-            transition: 0.3s;
+            margin-top: 15px;
+        }
+        footer {
+            text-align: center;
+            color: #555;
+            font-size: 0.8rem;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <div class="avatar">✨</div>
-    <div class="subtitle">Creator & Web Developer</div>
-    <h1>Hi, I'm Alisha</h1>
-    <p>Welcome to my personal portfolio hosted live on GitHub Pages!</p>
-    <a href="#" class="btn">Explore Work</a>
+    <div class="container">
+        <header>
+            <div class="avatar">✨</div>
+            <div class="subtitle">Student & Developer</div>
+            <h1>Hi, I'm Alisha Zahin</h1>
+            <p class="bio">Passionate about web development, designing clean interfaces, and building creative digital experiences.</p>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p style="color: #ccc; font-size: 0.9rem;">I'm currently building my technical skills in HTML, CSS, JavaScript, and GitHub. I love learning how to create websites from scratch and bringing creative concepts to life.</p>
+        </section>
+
+        <section>
+            <h2>My Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Web Hosting</span>
+                <span class="skill-tag">Responsive Design</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="project-card">
+                <h3>Personal Website</h3>
+                <p>Hosted on GitHub Pages using HTML & CSS.</p>
+            </div>
+            <div class="project-card">
+                <h3>Summer Internship Projects</h3>
+                <p>Practicing web deployment & coding tasks.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Get In Touch</h2>
+            <p style="color: #ccc; font-size: 0.9rem;">Feel free to reach out or connect with me regarding web design and development projects.</p>
+            <a href="mailto:example@email.com" class="btn">Contact Me</a>
+        </section>
+
+        <footer>
+            <p>© 2026 Alisha Zahin • Built with HTML & CSS</p>
+        </footer>
+    </div>
 </body>
 </html>
+
